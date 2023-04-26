@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+body {
+    display: grid;
+    font-family:'Dosis', sans-serif;
+    text-align:center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.game-title {
+    display: grid;
+    font-size: 3rem;
+    color: rgb(23, 63, 63);
+    justify-content: center;
+}
+
+.board {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    background-color: rgb(23, 63, 63);
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem;
+    color:black;
+}
+
+.cell {
+    display: grid;
+    width: 20vh;
+    height: 20vh;
+    text-align: center;
+    font-size: 12vh; 
+    place-items: center;
+    border: 0.5rem solid black;
+    cursor: pointer;
+    line-height: 10rem; 
+    color:black; 
+}
+
+.cell:hover {
+    background-color: rgb(81, 0, 128);
+}
+
+.game-status {
+    font-size: 2.5rem;
+    color:rgb(23, 63, 63);
+}
+
+button {
+    display: grid;
+    font-family:'Dosis', sans-serif;
+    text-align:center;
+    justify-self: center;
+    background-color: rgb(23, 63, 63);
+    width: 12rem;
+    font-size: 1.5rem;
+    color: white;
+    border:0.25rem solid black;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(81, 0, 128);
+}
+
+
